@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7F7A655DBA6195AC1BDF9D4 /* Pods_Realm_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8E36600EEEB219E736033C /* Pods_Realm_test.framework */; };
 		BF1417F529315FDD000B041E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1417F429315FDD000B041E /* AppDelegate.swift */; };
 		BF1417F729315FDD000B041E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1417F629315FDD000B041E /* SceneDelegate.swift */; };
 		BF1417FC29315FDD000B041E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1417FA29315FDD000B041E /* Main.storyboard */; };
 		BF1417FE29315FDE000B041E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1417FD29315FDE000B041E /* Assets.xcassets */; };
 		BF14180129315FDE000B041E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1417FF29315FDE000B041E /* LaunchScreen.storyboard */; };
 		BF14180929316033000B041E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180829316033000B041E /* TasksViewController.swift */; };
+		BF14180B2931626A000B041E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180A2931626A000B041E /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8E36600EEEB219E736033C /* Pods_Realm_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0D725A1E94E21231E9AA1A /* Pods-Realm_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm_test.debug.xcconfig"; path = "Target Support Files/Pods-Realm_test/Pods-Realm_test.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1417F129315FDD000B041E /* Realm_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realm_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1417F429315FDD000B041E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1417F629315FDD000B041E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BF14180029315FDE000B041E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14180229315FDE000B041E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF14180829316033000B041E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		BF14180A2931626A000B041E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		E0DBB8F8FB4A0DBAB2897FAE /* Pods-Realm_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm_test.release.xcconfig"; path = "Target Support Files/Pods-Realm_test/Pods-Realm_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F7A655DBA6195AC1BDF9D4 /* Pods_Realm_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				BF1417F329315FDD000B041E /* Realm_test */,
 				BF1417F229315FDD000B041E /* Products */,
+				F4C0BBF2F423F0199ED7BF22 /* Pods */,
+				C202C747546B1B58B11CF6CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				BF1417FD29315FDE000B041E /* Assets.xcassets */,
 				BF1417FF29315FDE000B041E /* LaunchScreen.storyboard */,
 				BF14180229315FDE000B041E /* Info.plist */,
+				BF14180A2931626A000B041E /* TaskModel.swift */,
 			);
 			path = Realm_test;
+			sourceTree = "<group>";
+		};
+		C202C747546B1B58B11CF6CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8E36600EEEB219E736033C /* Pods_Realm_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C0BBF2F423F0199ED7BF22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD0D725A1E94E21231E9AA1A /* Pods-Realm_test.debug.xcconfig */,
+				E0DBB8F8FB4A0DBAB2897FAE /* Pods-Realm_test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF14180529315FDE000B041E /* Build configuration list for PBXNativeTarget "Realm_test" */;
 			buildPhases = (
+				499F02FE2E5E14D2C1950199 /* [CP] Check Pods Manifest.lock */,
 				BF1417ED29315FDD000B041E /* Sources */,
 				BF1417EE29315FDD000B041E /* Frameworks */,
 				BF1417EF29315FDD000B041E /* Resources */,
+				A122691F820D7C57356BE4D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		499F02FE2E5E14D2C1950199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Realm_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A122691F820D7C57356BE4D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm_test/Pods-Realm_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm_test/Pods-Realm_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Realm_test/Pods-Realm_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF1417ED29315FDD000B041E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				BF14180929316033000B041E /* TasksViewController.swift in Sources */,
 				BF1417F529315FDD000B041E /* AppDelegate.swift in Sources */,
+				BF14180B2931626A000B041E /* TaskModel.swift in Sources */,
 				BF1417F729315FDD000B041E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		BF14180629315FDE000B041E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0D725A1E94E21231E9AA1A /* Pods-Realm_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		BF14180729315FDE000B041E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DBB8F8FB4A0DBAB2897FAE /* Pods-Realm_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
