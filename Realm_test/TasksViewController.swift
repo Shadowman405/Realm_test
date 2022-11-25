@@ -11,6 +11,7 @@ class TasksViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        createTestData()
     }
 
     // MARK: - Table view data source
@@ -34,5 +35,21 @@ class TasksViewController: UITableViewController {
         return cell
     }
     
+    
+    
+    private func createTestData() {
+        let shoppingList = TaskList()
+        shoppingList.name = "Shoping List"
+        
+        let bread = Task()
+        bread.name = "Bread"
+        bread.note = "White or Gray 500g"
+        
+        let tea = Task(value: ["Black","200g",Date(),false])
+        let chocolate = Task(value: ["80% dark chocolate","100g", Date(), true])
+        
+        shoppingList.tasks.insert(contentsOf: [tea,bread,chocolate], at: 0)
+    }
 
 }
+
