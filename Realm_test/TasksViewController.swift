@@ -56,7 +56,9 @@ class TasksViewController: UITableViewController {
         
         shoppingList.tasks.insert(contentsOf: [tea,bread,chocolate], at: 0)
         albumsList.tasks.insert(contentsOf: [cof,met,myhem], at: 0)
-        StorageManager.shared.save(taskList: [shoppingList, albumsList])
+        DispatchQueue.main.async {
+            StorageManager.shared.save(taskList: [shoppingList, albumsList])
+        }
     }
 
 }
