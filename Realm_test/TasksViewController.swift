@@ -29,6 +29,10 @@ class TasksViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return taskList.count
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,6 +70,14 @@ class TasksViewController: UITableViewController {
         DispatchQueue.main.async {
             StorageManager.shared.save(taskList: [shoppingList, albumsList])
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        let taskList = taskList[indexPath.row]
+        
+        guard let tasksVC = segue.destination as? TaskTableViewController else {return}
+        tasksVC.taskList = taskList
     }
 
 }

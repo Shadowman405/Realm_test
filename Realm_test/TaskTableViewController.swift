@@ -6,33 +6,40 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TaskTableViewController: UITableViewController {
+    
+    var taskList: TaskList!
+    private var currentTasks: Results<Task>!
+    private var completedTasks: Results<Task>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = taskList.name
+        
+        currentTasks = taskList.tasks.filter("isCompleted = false")
+        completedTasks = taskList.tasks.filter("isCompleted = true")
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        section == 0 ? currentTasks.count : completedTasks.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
 }

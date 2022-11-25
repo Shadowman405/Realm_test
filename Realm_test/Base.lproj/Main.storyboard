@@ -47,6 +47,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Task List" id="NBM-B3-CeC"/>
+                    <connections>
+                        <segue destination="bPZ-nT-55f" kind="show" identifier="toTask" id="Rba-kt-9fq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="281-rC-E4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SLO-dR-geF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" id="SLO-dR-geF">
                                 <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLO-dR-geF" id="HAo-VD-scK">
@@ -75,6 +78,7 @@
                             <outlet property="delegate" destination="bPZ-nT-55f" id="vt5-nQ-U0F"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="W4k-OJ-bSW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghY-BW-h7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
