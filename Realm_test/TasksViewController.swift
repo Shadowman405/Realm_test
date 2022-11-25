@@ -41,14 +41,22 @@ class TasksViewController: UITableViewController {
         let shoppingList = TaskList()
         shoppingList.name = "Shoping List"
         
+        let albumsList = TaskList()
+        albumsList.name = "Music to buy"
+        
         let bread = Task()
         bread.name = "Bread"
         bread.note = "White or Gray 500g"
-        
         let tea = Task(value: ["Black","200g",Date(),false])
         let chocolate = Task(value: ["80% dark chocolate","100g", Date(), true])
         
+        let cof = Task(value: ["Cradle of Filth - Thorngraphy","",Date(),true])
+        let met = Task(value: ["Metallica - Load","",Date(),false])
+        let myhem = Task(value: ["Mayhem - Puritania","",Date(),false])
+        
         shoppingList.tasks.insert(contentsOf: [tea,bread,chocolate], at: 0)
+        albumsList.tasks.insert(contentsOf: [cof,met,myhem], at: 0)
+        StorageManager.shared.save(taskList: [shoppingList, albumsList])
     }
 
 }
