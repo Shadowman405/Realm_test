@@ -16,6 +16,7 @@
 		BF14180929316033000B041E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180829316033000B041E /* TasksViewController.swift */; };
 		BF14180B2931626A000B041E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180A2931626A000B041E /* TaskModel.swift */; };
 		BF14180D29316612000B041E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180C29316612000B041E /* StorageManager.swift */; };
+		BF14180F29316C3C000B041E /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14180E29316C3C000B041E /* TaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BF14180829316033000B041E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		BF14180A2931626A000B041E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		BF14180C29316612000B041E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		BF14180E29316C3C000B041E /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		E0DBB8F8FB4A0DBAB2897FAE /* Pods-Realm_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm_test.release.xcconfig"; path = "Target Support Files/Pods-Realm_test/Pods-Realm_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				BF14180229315FDE000B041E /* Info.plist */,
 				BF14180A2931626A000B041E /* TaskModel.swift */,
 				BF14180C29316612000B041E /* StorageManager.swift */,
+				BF14180E29316C3C000B041E /* TaskTableViewController.swift */,
 			);
 			path = Realm_test;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF14180F29316C3C000B041E /* TaskTableViewController.swift in Sources */,
 				BF14180929316033000B041E /* TasksViewController.swift in Sources */,
 				BF1417F529315FDD000B041E /* AppDelegate.swift in Sources */,
 				BF14180D29316612000B041E /* StorageManager.swift in Sources */,
